@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .root {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      /* background-color: skyblue; */
+      /* background: url(https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=332555565,3724997579&fm=26&gp=0.jpg); */
+      background: url(https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3397216368,2264054915&fm=26&gp=0.jpg);
+      background-size: cover;
+    }
+
+    h1 {
+      margin-top: 30px;
+    }
+
+    .bgc {
+
+      display: flex;
+      justify-content: center;
+    }
+
+    .login-box-bodyWrap {
+      display: flex;
+      justify-content: center;
+      margin-top: 100px;
+    }
+
+    input {
+      height: 30px;
+      width: 200px;
+      margin-bottom: 10px;
+    }
+
+    input:nth-of-type(2) {
+      margin-left: 15px;
+    }
+
+    button {
+      margin-left: 55px;
+      width: 205px;
+      height: 30px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="root">
+    <div class="bgc">
+      <h1 class="title">商品管理登录系统</h1>
+    </div>
+    <div class="login-box-bodyWrap">
+      <div class="login-box-body">
+        <form action="/login/in" method="post">
+
+          用户名: <input type="text" placeholder="请输入你的管理员账号" id="username" name="username">
+
+          <br />
+          密码 :<input type="password" placeholder="请输入你的管理员密码" id="password" name="password">
+
+          <br />
+          <button type="submit">登 录</button>
+
+
+        </form>
+        <!-- /.social-auth-links -->
+        <a href="#">如你忘记了密码，请联系你的负责人</a>
+
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
